@@ -1,0 +1,72 @@
+@charset "ISO-8859-1";
+*{
+	background-color: #F0F0F0;
+}
+p {
+	background-color: #F0F0F0;
+}
+
+.ViewTable {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #C0C0C0;
+}
+.ViewTable, th, td {
+	text-align: left;
+	border-right: 1px solid #C0C0C0;
+	border-bottom: 1px solid #C0C0C0;
+}
+.ViewTable tr:nth-child(even){
+	background-color: #F0F0F0;
+}
+
+.AddTable{
+	border-collapse: collapse;
+	border: 1px solid #C0C0C0;
+	width: 100%;
+}
+button {
+	color:white;
+	border-radius: 4px;
+	background-color: #33cc33; 
+}
+h1 {
+	border-bottom: 1px solid #C0C0C0;
+}
+.sidenav{
+	color: blue;
+	background-color: #F0F0F0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.sidenav-item{
+	border-bottom: 1px solid #C0C0C0;
+}
+.sidenav .navbutton{
+	background-color: white;
+	color: black;
+}
+.nobullets{
+	list-style: none;
+	padding : 0 ;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+.logoutbutton{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.logo{
+	margin-right: auto;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.topnav{
+	background-color: #F0F0F0;
+}
