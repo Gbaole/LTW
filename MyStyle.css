@@ -1,7 +1,5 @@
 @charset "ISO-8859-1";
-*{
-	background-color: #F0F0F0;
-}
+
 p {
 	background-color: #F0F0F0;
 }
@@ -46,6 +44,9 @@ h1 {
 .sidenav .navbutton{
 	background-color: white;
 	color: black;
+}
+.sidemenu{
+	background-color: #F0F0F0;
 }
 .nobullets{
 	list-style: none;
