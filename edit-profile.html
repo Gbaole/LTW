@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    .navbar {
+      background-color: #f1f1f1;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+    .dropbtn {
+  background-color: #f1f1f1;
+  color: rgb(28, 19, 163);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f1f1f1;
+}
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">CMS</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn">
+                        <span class="glyphicon glyphicon-user"></span> 
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="#"><span class="glyphicon glyphicon-user"></span> User Profile</a>
+                    <a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                    </div>
+                  </div>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+          
+        </div>
+    </nav>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+        <br>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Blog..">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        <br>
+      <ul class="nav nav-pills nav-stacked">
+        <li ><a href="#section1">View Conntent</a></li>
+        <li><a href="#section2">Form Content</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-9">
+      <h2>Edit Profile</h2>
+      <hr>
+      
+      <header class="w3-container w3-light-grey">
+        <h4>Profile Form Elements</h4>
+      </header>
+      <br>
+      <div class="w3-container">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">First Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the first name">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Last Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the last name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Phone</label>
+            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Enter the phone number">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Discription</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          
+          <button type="button" class="btn btn-outline-primary">Submit Button</button>
+          <button type="button" class="btn btn-outline-secondary">Reset Button</button>
+        </form>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
