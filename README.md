@@ -13,5 +13,5 @@ View :
 
 #Quy tắc đặt tên
 Đặt tên file chữ thường VD: add-content
-#Tất cả Style đều phải được viết vào file CSS
-#Trước khi làm phải pull về máy và push lại sau khi làm xong
+Tất cả Style đều phải được viết vào file CSS
+Trước khi làm phải pull về máy và push lại sau khi làm xong
