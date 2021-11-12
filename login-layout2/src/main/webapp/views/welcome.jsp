@@ -1,1 +1,0 @@
-<div >Welcome to Apache Tiles</div>

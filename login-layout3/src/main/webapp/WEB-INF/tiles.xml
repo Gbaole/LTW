@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="main" template="/layout/main.jsp">
+		<put-attribute name="title" value="index" />
+		<put-attribute name="header" value="/layout/header.jsp" />
+		<put-attribute name="menu" value="/layout/menu.jsp" />
+		<put-attribute name="body" value="/views/body-view-content.jsp" />
+		<put-attribute name="footer" value="/layout/footer.jsp" />
+	</definition>
+
+	<!-- Welcome page -->
+	<definition name="view-content" extends="main">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/views/body-view-content.jsp" />
+	</definition>
+
+	<!-- Add Content page -->
+	<definition name="add-content" extends="main">
+		<put-attribute name="title" value="Add Content" />
+		<put-attribute name="body" value="/views/body-add-content.jsp" />
+	</definition>
+
+	<!-- Edit Profile page -->
+	<definition name="edit-profile" extends="main">
+		<put-attribute name="title" value="Edit Profile" />
+		<put-attribute name="body" value="/views/body-edit-profile.jsp" />
+	</definition>
+
+	<!-- Edit Content page -->
+	<definition name="edit-content" extends="main">
+		<put-attribute name="title" value="Edit Content" />
+		<put-attribute name="body" value="/views/body-edit-content.jsp" />
+	</definition>
+</tiles-definitions>
