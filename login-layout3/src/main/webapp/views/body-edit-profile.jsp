@@ -1,13 +1,9 @@
 <div class="col-sm-9">
 	<h2>Edit Profile</h2>
 	<hr>
-	<div class="edit-content">
-		<header class="w3-container w3-light-grey">
-			<h4>Profile Form Elements</h4>
-		</header>
-		<br>
-		<div class="w3-container">
-			<form>
+	<div class="viewcontentlist">
+			<h4>Profile Form Elements</h4>	
+				<form>
 				<div class="form-group">
 					<label for="formGroupExampleInput">First Name</label> <input
 						type="text" class="form-control" id="formGroupExampleInput"
@@ -40,5 +36,5 @@
 					Button</button>
 			</form>
 		</div>
-	</div>
+			
 </div>
