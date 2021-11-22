@@ -17,14 +17,5 @@
     <servlet-name>Tiles Dispatch</servlet-name>
     <url-pattern>*.tiles</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>UserSevlet</display-name>
-    <servlet-name>UserSevlet</servlet-name>
-    <servlet-class>net.usermanagement.web.UserSevlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>UserSevlet</servlet-name>
-    <url-pattern>/UserSevlet</url-pattern>
-  </servlet-mapping>
+
 </web-app>
