@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <title>Sign In</title>
 </head>
-<body>
+<body class="body-login">
 	<div class="container-login">
 		<div class="header-login">
 			<h2>Please Sign In</h2>
