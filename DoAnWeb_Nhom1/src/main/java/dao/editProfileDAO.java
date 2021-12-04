@@ -18,7 +18,8 @@ public class editProfileDAO {
 		Connection connection = null;
 		try {
 			Class.forName(common.common.jdbcDriver);
-			connection = DriverManager.getConnection(common.common.jdbcURL, common.common.jdbcUsername, common.common.jdbcPassword);
+			connection = DriverManager.getConnection(common.common.jdbcURL, common.common.jdbcUsername,
+					common.common.jdbcPassword);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -40,8 +41,10 @@ public class editProfileDAO {
 			preparedStatement.setString(5, mb.getUpdatename());
 			preparedStatement.setInt(6, mb.getId());
 			preparedStatement.executeUpdate();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
 		}
-		
 	}
 
 	public MemberEdit getMember(String emailin) throws ClassNotFoundException {
@@ -53,7 +56,7 @@ public class editProfileDAO {
 			preparedStatement.setString(1, emailin);
 
 			ResultSet rs = preparedStatement.executeQuery();
-			while(rs.next()) {
+			while (rs.next()) {
 				int id = rs.getInt("id");
 				String fn = rs.getString("Firstname");
 				String ln = rs.getString("Lastname");
@@ -71,5 +74,5 @@ public class editProfileDAO {
 		}
 		return mb;
 	}
-	
+
 }
